@@ -1,0 +1,157 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import jdk.tools.jaotc.collect.SearchPath;
+import java.util.*;
+import sun.jvm.hotspot.debugger.cdbg.LineNumberInfo;
+public class CSC110Week8Project {
+    public static void main(String... args)  throws IOException{
+        var fileName = "data.txt";
+        var filePath = Paths.get(fileName);
+        if(!Files.exists(filePath)){
+            System.out.println("The File "+ fileName + " Could not be found");
+            return;
+        }
+        var userInfos = new ArrayList<String>();
+        var dataElementCount = 0;
+        var readStream = Files.newBufferedReader(filePath);
+        var data = readStream.readLine();
+        while(data !=null){ 
+            data = readStream.readLine();
+            if(data !=null ){
+                userInfos.add(data);
+            }        
+        }
+        System.out.println("------------ SERIES -----------"); 
+        for (var userData : userInfos) {
+            var elements  = userData.split(", ");
+            for (var elementItem : elements)
+            System.out.println(elementItem.trim( ));
+            System.out.println(elements[0]);
+        }  
+        System.out.println("------------ WRITER -------------");
+        for (var userData : userInfos) {
+            var elements  = userData.split(", ");
+            for (var elementItem : elements)
+            System.out.println(elementItem.trim( ));
+            System.out.println(elements[1]);
+        }    
+        System.out.println("------------ PUBLISHER -------------");
+        for (var userData : userInfos) {
+            var elements  = userData.split(", ");
+            for(var elementItem : elements)
+            System.out.println(elementItem.trim( ));
+            System.out.println(elements[2]);
+        }
+        enterSearch.task
+        if SearchPath("SERIES")
+        System.out.println(GoodData1.txt)
+        if SearchPath("WRITER")
+        System.out.println(GoodData2.txt)
+        if SearchPath("PUBLISHER")
+        System.out.println(GoodData3.txt)
+    }
+    Stack<String> stack = new Stack<String>();
+        stack.push ("PUBLISHER");
+        printStack(stack);
+        stack.push ("WRITER");
+        printStack(stack);
+        stack.push ("SERIES");
+        printStack(stack);
+        stack.pop();
+        printStack(stack);
+        stack.pop();
+        printStack(stack);
+        stack.pop();
+        printStack(stack);
+        stack.pop();
+        printStack(stack);
+        delete(excess)
+}
+private static void printStack(Stack<String> stackattempt1) {
+    if (stackattempt1.isEmpty()) {
+        System.out.println("You have nothing in your stack");
+    }
+    else{
+        System.out.printf("%s \n", stackattempt1);
+    }    
+PriorityQueue<String> Queue = new PriorityQueue<String> (); {
+Queue.offer("SERIES");
+Queue.offer("WRITER");
+Queue.offer("PUBLISHER");
+System.out.printf("%s ", Queue);
+System.out.println();
+System.out.printf("%s ", Queue.peek());
+System.out.println();
+Queue.poll();
+System.out.printf("%s ", Queue);
+System.out.printf("%s ", Queue.peek());
+System.out.println();
+Queue.poll();
+System.out.printf("%s ", Queue);
+System.out.printf("%s ", Queue.peek());
+System.out.println();
+Queue.poll();
+System.out.printf("%s ", Queue);
+}
+String s = "data.txt"; 
+        Scanner scanner = new Scanner(s); 
+        scanner.useDelimiter(","); 
+        System.out.println("Scanner String: \n"
+                           + scanner.nextLine()); 
+        System.out.println("\nDelimiter being used in Scanner: "
+                           + scanner.delimiter(0)); 
+        scanner.close(); 
+        Scanner scanner = new Scanner(s); 
+        scanner.useDelimiter(","); 
+        System.out.println("Scanner String: \n"
+                           + scanner.nextLine()); 
+        System.out.println("\nDelimiter being used in Scanner: "
+                           + scanner.delimiter(1)); 
+        scanner.close(); 
+        Scanner scanner = new Scanner(s); 
+        scanner.useDelimiter(","); 
+        System.out.println("Scanner String: \n"
+                           + scanner.nextLine()); 
+        System.out.println("\nDelimiter being used in Scanner: "
+                           + scanner.delimiter(2)); 
+        scanner.close(); 
+}
+    public static void main(String.DMX CMX) {
+        String[] numbers = {"SERIES", "WRITER", "PUBLISHER"};
+        for (int i = 0; i < numbers.length; i++) {
+          System.out.println(numbers[i]);
+        }
+}
+ private long startTime = 0;
+private long stopTime = 0;
+private boolean running = false;
+public void start() {
+  this.startTime = System.currentTimeMillis();
+  this.running = true;
+}
+public void stop() {
+  this.stopTime = System.currentTimeMillis();
+  this.running = false;
+}
+public long getElapsedTime() {
+  long elapsed;
+  if (running) {
+    elapsed = (System.currentTimeMillis() - startTime);
+  } else {
+    elapsed = (stopTime - startTime);
+  }
+  return elapsed;
+}
+public long getElapsedTimeSecs() {
+  long elapsed;
+  if (running) {
+    elapsed = ((System.currentTimeMillis() - startTime) / 1000);
+  } else {
+    elapsed = ((stopTime - startTime) / 1000);
+  }
+  return elapsed;
+}
+}
